@@ -1,15 +1,17 @@
 /* Set the top and bottom margin to 0 */
-body{
-    margin: 0;
+html body{
+    margin: 0 0 0 0;
 }
 
     /* Setting the heigth of the header and making the background transparent */
 header{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 130px;
-    background-color: transparent;
+    height: 100px;
+    background-color: #ffffff;
     z-index: 2;
 }
 
@@ -17,33 +19,30 @@ header{
 
 header nav menu li a{
     /* changing the color of the link */
-    color: aliceblue;
+    color: #000000;
 }
+
 
 header nav menu {
     display: flex;
     list-style: none;
-    position: absolute;
-    top: 170px; 
-    left: 50%;
-    transform: translateX(-50%); 
+    position: static;
+    padding-right: 20px;
     font-family: 'Courier New', Courier, monospace;
     gap: 15px;
 }
 
 header div img{
-    position: absolute;
-    height: 180px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    height: 100px;
     width: auto;
 }
 
 .main{
     background-image: url("../img/imgbg.png");
-    width: 100vw;
-    height: 105vh;
-    background-size: cover;
+    width: auto;
+    height: 100vh;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -54,7 +53,6 @@ header div img{
 }
 
 .main::after {
-    content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.3); /* making asemi transparent overlay so the nav is more visiblt */
