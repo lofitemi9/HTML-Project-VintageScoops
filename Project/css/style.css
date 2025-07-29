@@ -37,17 +37,14 @@ header div img{
     height: 100px;
     width: auto;
 }
-
-.main{
-    background-image: url("../img/imgbg.png");
-    width: auto;
+.main>div{
+    width: auto; /* Set your desired width */
     height: 100vh;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.main {
+.main>div{
     position: relative;
     z-index: 1;
 }
