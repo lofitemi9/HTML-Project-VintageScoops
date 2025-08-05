@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-  background: repeating-linear-gradient(135deg, #ffe6ec 0 40px, #ffd6e0 40px 80px);
+  background: repeating-linear-gradient(135deg, #000 0 40px, #fff 40px 80px);
   color: #3a2c1a;
   margin: 0;
   padding: 0;
@@ -9,8 +9,10 @@ body {
 main {
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 100px;
 }
-h1, h2 {
+h1,
+h2 {
   font-family: 'Cooper Black', serif;
   color: #b85c38;
 }
@@ -21,7 +23,7 @@ h1, h2 {
   margin: 3rem auto;
   background: linear-gradient(135deg, #ffe6ec 0%, #ffd6e0 100%);
   border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 .product-image-col {
@@ -37,7 +39,7 @@ h1, h2 {
   width: 100%;
   max-width: 340px;
   border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
 .product-info-col {
@@ -122,4 +124,4 @@ h1, h2 {
   .product-image-col {
     padding: 1.5rem 1rem;
   }
-} 
+}
